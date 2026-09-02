@@ -431,6 +431,10 @@ table.matrix tbody tr:last-child th,table.matrix tbody tr:last-child td{border-b
 </style>
 <style>
 .thanks{display:none;text-align:center;padding:var(--space-16) var(--space-6)}
+.note{max-width:none}
+.note p + p{margin-top:var(--space-4)}
+.grid .field{display:flex;flex-direction:column;justify-content:flex-end}
+.grid .field label{margin-top:auto}
 
 /* ---- tap controls ---- */
 .seg{display:inline-flex;gap:var(--space-2);flex:none}
@@ -509,7 +513,7 @@ table.matrix tbody tr:last-child th,table.matrix tbody tr:last-child td{border-b
             <span class="step">Part B</span><h3 style="margin-bottom:var(--space-5)">What you're here for</h3>
             <div class="field"><label for="f_goal">Main goal, in your own words</label><textarea id="f_goal" name="Main goal"></textarea></div>
             <div class="field"><label for="f_why">Why now? What changed?</label><textarea id="f_why" name="Why now"></textarea></div>
-            <div class="field"><label for="f_success">What does success look like in four weeks?</label><textarea id="f_success" name="Success in 4 weeks"></textarea></div>
+            <div class="field"><label for="f_success">What does success look like in twelve weeks?</label><textarea id="f_success" name="Success in 12 weeks"></textarea></div>
             <div class="field"><label for="f_past">What have you tried before, and what made it stop?</label><textarea id="f_past" name="Previous attempts"></textarea></div>
           </div>
 
@@ -539,7 +543,10 @@ table.matrix tbody tr:last-child th,table.matrix tbody tr:last-child td{border-b
             <div id="parq"></div>
             <div class="field" style="margin-top:var(--space-5)"><label for="f_meds">Medications and supplements you take regularly</label><textarea id="f_meds" name="Medications"></textarea></div>
             <div class="field"><label for="f_cond">Anything you answered yes to — give me the detail</label><textarea id="f_cond" name="Health detail"></textarea></div>
-            <div class="note"><p><strong>As part of your program, we may introduce optional practices such as time-restricted eating (a structured eating or “feeding” window), creatine supplementation, sauna use, and cold exposure or cold plunges. These are never compulsory, but when appropriate they can support resilience, recovery, performance, and broader physiological health benefits.</strong>Heat, cold exposure, creatine, and time-restricted eating can also have genuine contraindications. If you answered yes to a heart or blood-pressure condition, kidney disease, epilepsy or fainting, diabetes, or a current or previous eating disorder/difficult relationship with food, please do not begin these practices until you have discussed them with both your GP and me. Your training and the rest of your plan can still proceed while we work out what is safe and suitable for you.</p></div>
+            <div class="note">
+              <p><strong>As part of your program, we may introduce optional practices such as time-restricted eating (a structured eating or "feeding" window), creatine supplementation, sauna use, and cold exposure or cold plunges. These are never compulsory, but when appropriate they can support resilience, recovery, performance, and broader physiological health benefits.</strong></p>
+              <p>Heat, cold exposure, creatine, and time-restricted eating can also have genuine contraindications. If you answered yes to a heart or blood-pressure condition, kidney disease, epilepsy or fainting, diabetes, or a current or previous eating disorder or difficult relationship with food, please do not begin these practices until you have discussed them with both your GP and me. Your training and the rest of your plan can still proceed while we work out what is safe and suitable for you.</p>
+            </div>
           </div>
 
           <div class="card plain" style="margin-bottom:var(--space-4)">
